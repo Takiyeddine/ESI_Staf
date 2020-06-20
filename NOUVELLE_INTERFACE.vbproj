@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F7CAC910-9436-451D-89EF-17C449DB7E40}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>NOUVELLE_INTERFACE.My.MyApplication</StartupObject>
+    <RootNamespace>NOUVELLE_INTERFACE</RootNamespace>
+    <AssemblyName>NOUVELLE_INTERFACE</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>NOUVELLE_INTERFACE.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>NOUVELLE_INTERFACE.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AFFECTATION.Designer.vb">
+      <DependentUpon>AFFECTATION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AFFECTATION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFFICHAGE_HISTORIQUE.Designer.vb">
+      <DependentUpon>AFFICHAGE_HISTORIQUE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AFFICHAGE_HISTORIQUE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFFICHAGE_HISTORIQUE_SALLES.designer.vb">
+      <DependentUpon>AFFICHAGE_HISTORIQUE_SALLES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AFFICHAGE_HISTORIQUE_SALLES.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPLOI.vb" />
+    <Compile Include="EMPLOI_DE_TEMPS.Designer.vb">
+      <DependentUpon>EMPLOI_DE_TEMPS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EMPLOI_DE_TEMPS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ETAT.designer.vb">
+      <DependentUpon>ETAT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ETAT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ETUDIANT.vb" />
+    <Compile Include="ETUDIANT_APRES_AFF.vb" />
+    <Compile Include="FIRST_PAGE.designer.vb">
+      <DependentUpon>FIRST_PAGE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FIRST_PAGE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOADING.Designer.vb">
+      <DependentUpon>LOADING.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LOADING.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapeEsi2.Designer.vb">
+      <DependentUpon>MapeEsi2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MapeEsi2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AFF_EXECUTE.Designer.vb">
+      <DependentUpon>AFF_EXECUTE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AFF_EXECUTE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AP2.designer.vb">
+      <DependentUpon>AP2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AP2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\classe1.vb" />
+    <Compile Include="My Project\HISTORIQUE.Designer.vb">
+      <DependentUpon>HISTORIQUE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\HISTORIQUE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\INITIALISATION.Designer.vb">
+      <DependentUpon>INITIALISATION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\INITIALISATION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\MAPESI_P1.designer.vb">
+      <DependentUpon>MAPESI_P1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MAPESI_P1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SALLE.vb" />
+    <Compile Include="SALLES_MODULES.Designer.vb">
+      <DependentUpon>SALLES_MODULES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SALLES_MODULES.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AFFECTATION.resx">
+      <DependentUpon>AFFECTATION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AFFICHAGE_HISTORIQUE.resx">
+      <DependentUpon>AFFICHAGE_HISTORIQUE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AFFICHAGE_HISTORIQUE_SALLES.resx">
+      <DependentUpon>AFFICHAGE_HISTORIQUE_SALLES.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMPLOI_DE_TEMPS.resx">
+      <DependentUpon>EMPLOI_DE_TEMPS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ETAT.resx">
+      <DependentUpon>ETAT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FIRST_PAGE.resx">
+      <DependentUpon>FIRST_PAGE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOADING.resx">
+      <DependentUpon>LOADING.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapeEsi2.resx">
+      <DependentUpon>MapeEsi2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\AFF_EXECUTE.resx">
+      <DependentUpon>AFF_EXECUTE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\AP2.resx">
+      <DependentUpon>AP2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\HISTORIQUE.resx">
+      <DependentUpon>HISTORIQUE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\INITIALISATION.resx">
+      <DependentUpon>INITIALISATION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\MAPESI_P1.resx">
+      <DependentUpon>MAPESI_P1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SALLES_MODULES.resx">
+      <DependentUpon>SALLES_MODULES.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\db_tesgt.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
